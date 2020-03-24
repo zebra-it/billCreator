@@ -46,15 +46,14 @@ public class Order {
 
     public void getResult() {
         String str = String.format(
-                "Ваш заказ #%s\n" +
-                        "товар \t\t  |\tкол-во| цена, $ |\n" +
-                        "%s |\t\t%s |\t\t%s |",
-                number,
-                products.get(0).name,
-                products.get(0).amount,
-                products.get(0).price
+                "Ваш заказ #%s\n",
+                number
                 );
         System.out.println(str);
+        products.forEach(product -> {
+            System.out.println(
+                    product.name + "\t" + product.amount + "шт\t" + product.price );
+        });
     }
 
     static String getRandomString(int n) {
