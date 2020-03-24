@@ -1,10 +1,9 @@
-[BillCreator `v0.1`][ss]
+BillCreator `v0.1`
 
+**simple bill creator** :astonished:
 
-**simple bill creator**
+features
 
-### features
+* read from .txt file
+* read from db (mySql)
 
-
-[ss]: #BillCreator
-sssdasd
